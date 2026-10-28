@@ -1,5 +1,9 @@
 # Anticlockwise Watch Screensaver
 
+![Anticlockwise watch at 10:09:30 on a mirrored dial](docs/screenshot.png)
+
+![The second hand sweeping anticlockwise](docs/anticlockwise.gif)
+
 ## What it is
 
 An analog watch whose hands sweep anticlockwise, run fullscreen as a

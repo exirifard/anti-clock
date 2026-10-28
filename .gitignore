@@ -7,5 +7,6 @@ __pycache__/
 *~
 .DS_Store
 
-# Local screenshots from --once / headless runs
+# Local screenshots from --once / headless runs (docs/ images are tracked)
 *.png
+!docs/*.png
