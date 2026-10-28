@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Editor / OS noise
+*.swp
+*~
+.DS_Store
+
+# Local screenshots from --once / headless runs
+*.png
