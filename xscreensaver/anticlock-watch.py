@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-anticlock-watch.py - xscreensaver "hack" that draws the Anticlockwise Watch.
+anticlock-watch.py - xscreensaver "hack" that draws Anti-Clock.
 
 Modes
   EMBEDDED    -window-id ID / --window-id ID, or env XSCREENSAVER_WINDOW set:
               draw into the X window xscreensaver (or its settings preview)
               hands us, using a Gtk.Plug child window. No toplevel, no grabs.
   STANDALONE  otherwise (or --window): a normal 800x500 Gtk.Window titled
-              "Anticlockwise Watch" (--fullscreen for full screen). Escape or
+              "Anti-Clock" (--fullscreen for full screen). Escape or
               q quits.
   ONCE        --once FILE.png: render one frame to a PNG with cairo only, no
               GTK, no display needed. Test hook.
@@ -95,7 +95,7 @@ def build_parser():
     p = argparse.ArgumentParser(
         prog=PROG,
         allow_abbrev=False,
-        description='Anticlockwise Watch - an xscreensaver hack (and standalone clock).',
+        description='Anti-Clock - an xscreensaver hack (and standalone clock).',
         epilog=(
             'Embedded mode is chosen when -window-id/--window-id is given or the '
             'environment variable XSCREENSAVER_WINDOW is set (that is how '
@@ -293,7 +293,7 @@ def run_gtk(state, xid, fps, fullscreen):
         GLib.timeout_add(PARENT_POLL_MS, poll_parent)
     else:
         # ---------------- STANDALONE ----------------
-        win = Gtk.Window(title='Anticlockwise Watch')
+        win = Gtk.Window(title='Anti-Clock')
         win.set_default_size(*STANDALONE_SIZE)
         try:
             css = Gtk.CssProvider()

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# idle-watcher.sh - start the anticlockwise-watch screensaver once the user has been idle.
+# idle-watcher.sh - start the Anti-Clock screensaver once the user has been idle.
 #
 # Polls GNOME's Mutter IdleMonitor over D-Bus every 2 s. When the idle time reaches
 # IDLE_SECONDS (env, default 120) it runs ./run.sh (blocking) and then resumes polling.

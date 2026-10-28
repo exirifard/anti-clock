@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# run.sh - launch the anticlockwise watch screensaver fullscreen in Chrome
+# run.sh - launch the Anti-Clock screensaver fullscreen in Chrome
 # kiosk mode and close it as soon as the user touches the keyboard or mouse.
 #
 # Environment:

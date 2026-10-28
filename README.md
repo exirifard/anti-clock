@@ -1,6 +1,6 @@
-# Anticlockwise Watch Screensaver
+# Anti-Clock
 
-![Anticlockwise watch at 10:09:30 on a mirrored dial](docs/screenshot.png)
+![Anti-Clock at 10:09:30 on a mirrored dial](docs/screenshot.png)
 
 ![The second hand sweeping anticlockwise](docs/anticlockwise.gif)
 
@@ -13,9 +13,16 @@ By default the dial is mirrored too (12 at the top, 3 on the LEFT, 6 at the
 bottom, 9 on the RIGHT), so the watch still reads the correct time, just
 backwards. Add `?mirror=0` to keep a normal dial under the backwards hands.
 
+Burn-in protection is built in: the whole watch drifts slowly around the screen
+on a Lissajous path (periods of 97 s and 131 s, amplitude 4 % of the shorter
+screen edge, about 43 px on a 1080p display), so no pixel shows a static image
+for long. It is on by default in both modes; `?drift=0` or `--no-drift` turns it
+off, which is only useful for screenshots. The xscreensaver setup also turns the
+display off after an hour of idle time.
+
 ## Getting the code
 
-    git clone https://github.com/exirifard/anticlockwise-watch.git /archive/screensaver
+    git clone https://github.com/exirifard/anti-clock.git /archive/screensaver
 
 The examples in this file assume the checkout lives at `/archive/screensaver`.
 If you clone it somewhere else, substitute your own path in the commands below.

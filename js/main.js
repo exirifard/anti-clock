@@ -33,7 +33,7 @@
   var MOUSE_GRACE_MS = 1500;   // ignore mousemove this long after load
   var MOUSE_THRESHOLD_PX = 4;  // movement from first observed position that counts as input
 
-  document.title = 'Anticlockwise Watch';
+  document.title = 'Anti-Clock';
 
   var canvas = document.getElementById('clock');
   if (!canvas) {

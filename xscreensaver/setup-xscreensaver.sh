@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# setup-xscreensaver.sh - run the Anticlockwise Watch as a real xscreensaver
+# setup-xscreensaver.sh - run Anti-Clock as a real xscreensaver
 # "hack" (so it also shows while the screen is LOCKED) and point GNOME at
 # xscreensaver instead of its own lock screen.
 #
@@ -22,7 +22,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "${SCRIPT_DIR}")"
 HACK="${SCRIPT_DIR}/anticlock-watch.py"
-HACK_NAME="Anticlockwise Watch"
+HACK_NAME="Anti-Clock"
 WRAPPER="/usr/share/xscreensaver/xscreensaver-wrapper.sh"
 CHROME_UNINSTALL="${PROJECT_DIR}/uninstall.sh"
 CHROME_DESKTOP="${HOME}/.config/autostart/anticlockwise-watch.desktop"
@@ -109,7 +109,7 @@ esac
   || die "LOCK_TIMEOUT must look like H:MM:SS (got '${LOCK_TIMEOUT}')"
 TIMEOUT="$(printf '%d:%02d:00' "$((IDLE_MINUTES / 60))" "$((IDLE_MINUTES % 60))")"
 
-echo "Anticlockwise Watch - xscreensaver setup"
+echo "Anti-Clock - xscreensaver setup"
 if [[ "${DRY_RUN}" == "1" ]]; then
   echo "DRY RUN - nothing will be changed; every action is only printed."
 fi
@@ -310,7 +310,7 @@ fi
 # of the programs block are written literally (each entry ends in: \n\ ).
 xss_content="$(cat <<'XSS_EOF'
 # XScreenSaver Preferences File
-# Written by setup-xscreensaver.sh (Anticlockwise Watch). Edit with xscreensaver-settings.
+# Written by setup-xscreensaver.sh (Anti-Clock). Edit with xscreensaver-settings.
 
 mode:				one
 selected:			0
@@ -351,7 +351,7 @@ note "(the stock /etc/xdg/autostart/xscreensaver.desktop has OnlyShowIn=XFCE, so
 autostart_content="[Desktop Entry]
 Type=Application
 Name=XScreenSaver
-Comment=Start the XScreenSaver daemon (Anticlockwise Watch screensaver and screen locker)
+Comment=Start the XScreenSaver daemon (Anti-Clock screensaver and screen locker)
 Exec=${WRAPPER} -no-splash
 Terminal=false
 X-GNOME-Autostart-enabled=true

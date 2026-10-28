@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install.sh - register the anticlockwise watch idle-watcher as a GNOME autostart entry.
+# install.sh - register Anti-Clock idle-watcher as a GNOME autostart entry.
 # Usage: ./install.sh            (installs)
 #        DRY_RUN=1 ./install.sh  (prints what it would write, changes nothing)
 set -euo pipefail
@@ -18,8 +18,8 @@ esac
 
 DESKTOP_CONTENT="[Desktop Entry]
 Type=Application
-Name=Anticlockwise Watch Screensaver
-Comment=Launches the anticlockwise watch screensaver after the session has been idle
+Name=Anti-Clock Screensaver
+Comment=Launches the Anti-Clock screensaver after the session has been idle
 Exec=${EXEC_PATH}
 Terminal=false
 X-GNOME-Autostart-enabled=true

@@ -1,5 +1,5 @@
 /*
- * clockmath.js - pure geometry/time math for the anticlockwise watch.
+ * clockmath.js - pure geometry/time math for Anti-Clock.
  *
  * Works in the browser as the global `ClockMath` and in node via
  * `module.exports` (see dual export wrapper at the bottom).

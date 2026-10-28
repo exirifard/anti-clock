@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""watchface.py - pure drawing + math for the anticlockwise watch.
+"""watchface.py - pure drawing + math for Anti-Clock.
 
 A faithful pycairo port of js/clockmath.js, js/dial.js and js/hands.js.
 Imports only math, datetime and cairo (no GTK), so it can render to an
